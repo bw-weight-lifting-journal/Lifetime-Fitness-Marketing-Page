@@ -1,0 +1,46 @@
+.top {
+    display: flex;
+    background-color: #F3F3F3;
+    flex-flow: row wrap;
+    padding: 1%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    div.title {
+        .setup();
+        flex-flow: column wrap;
+        align-content: center;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+    
+    nav {
+        .setup(space-between, 100%);
+        padding-right: 20%;
+        padding-left: 20%;
+        margin-top: 2%;
+        @media @tablet {
+            padding-top: 2%;
+            padding-left: 7.5%;
+            padding-right: 7.5%;
+            justify-content: space-around;
+            padding-bottom: 2%;
+        }
+        @media @phone{
+            padding-top: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            justify-content: space-around;
+            padding-bottom: 2%;
+        }
+        .toolbar {
+            text-decoration: none;
+            font-size: 2rem;
+            color: black;
+        }
+    }
+}

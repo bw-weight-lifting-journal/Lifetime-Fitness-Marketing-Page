@@ -1,0 +1,26 @@
+.setup(@just: center, @wid: 100%) {
+    display: flex;
+    justify-content: @just;
+    width: @wid;
+  }
+
+.view(@fd: column){
+    display: flex;
+    width: 100%;
+    flex-direction: @fd;
+    justify-content: center;
+  }
+  
+.bmix (@bc: #2A9FD8, @c: white){
+    background-color: @bc; 
+    color: @c;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    width: 100px;
+    font-weight: bold;
+    border: 2px solid #2A9FD8;
+  }
