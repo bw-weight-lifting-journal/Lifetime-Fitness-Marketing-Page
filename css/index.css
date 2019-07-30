@@ -384,6 +384,10 @@ footer {
   justify-content: space-around;
   font-weight: bold;
 }
+.home .middle-section .about-middle-points .middle_point_text .contact-info {
+  color: white;
+  font-weight: bold;
+}
 @media (max-width: 800px) {
   .home .middle-section .about-middle-points .middle_point_text {
     width: 100%;
