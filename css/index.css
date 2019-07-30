@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #5E6164;
 }
 h1,
@@ -142,7 +142,9 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-style: italic;
   color: #23293B;
 }
 h2 {
@@ -174,8 +176,6 @@ p {
   width: 100%;
   flex-flow: column wrap;
   align-content: center;
-}
-.top .title {
   font-size: 4rem;
 }
 .top nav {
@@ -209,6 +209,9 @@ p {
   font-size: 2rem;
   color: black;
 }
+.top nav a {
+  font-weight: bold;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -216,9 +219,11 @@ footer {
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   margin-bottom: 5%;
+  text-align: left;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -244,6 +249,7 @@ footer {
   display: flex;
   flex-flow: row-wrap;
   justify-content: space-around;
+  flex-flow: row wrap;
 }
 @media (max-width: 500px) {
   .home .middle-section {
@@ -251,6 +257,7 @@ footer {
   }
 }
 .home .middle-section .middle-points {
+  margin: 15px;
   padding: 15px;
   width: 30%;
   background-color: #084E8A;
@@ -263,7 +270,7 @@ footer {
   }
 }
 .home .middle-section .middle-points h3 {
-  margin-top: 11px;
+  margin-bottom: 11px;
   color: white;
   width: 100%;
   text-align: center;
@@ -274,14 +281,13 @@ footer {
 .home .divider {
   display: flex;
   width: 100%;
-  border: 3px solid black;
-  margin-top: 10px;
+  background-color: #8D7E83;
   justify-content: center;
-  padding: 10px;
-  font-size: 2rem;
+  padding: 3%;
 }
 .home .final_point {
   margin-top: 60px;
+  width: 100%;
   border-top: 1px solid #dee2e6;
   padding: 6% 7.5%;
   display: flex;
@@ -306,7 +312,7 @@ footer {
   }
 }
 .home .final_point .final_point-text {
-  width: 50%;
+  width: 100%;
 }
 @media (max-width: 900px) {
   .home .final_point .final_point-text {
@@ -325,9 +331,6 @@ footer {
     padding-left: 4%;
     padding-top: 2%;
   }
-}
-.home .final_point .final_point-text h3 {
-  margin-bottom: 10px;
 }
 .home .final_point .final_point-text p {
   margin-bottom: 26px;
@@ -381,60 +384,4 @@ footer {
     padding: 5%;
     padding-left: 43%;
   }
-}
-.home .final_point .bottom-img {
-  width: 46%;
-  margin-left: 4%;
-}
-@media (max-width: 900px) {
-  .home .final_point .bottom-img {
-    display: flex;
-    width: 100%;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-}
-@media (max-width: 500px) {
-  .home .final_point .bottom-img {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-.home .final_point .bottom-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-.home .about-us-middle {
-  display: flex;
-  flex-flow: row-wrap;
-  justify-content: space-around;
-  flex-flow: row wrap;
-}
-@media (max-width: 500px) {
-  .home .about-us-middle {
-    flex-flow: column wrap;
-  }
-}
-.home .about-us-middle .about-us-middle-points {
-  padding: 15px;
-  background-image: url("");
-  width: 30%;
-  border: 2px solid black;
-  border-radius: 4px;
-  margin-top: 20px;
-}
-@media (max-width: 500px) {
-  .home .about-us-middle .about-us-middle-points {
-    width: 100%;
-    padding: 15px, 15px, 0px, 15px;
-  }
-}
-.home .about-us-middle .about-us-middle-points h3 {
-  margin-top: 11px;
-}
-.home .about-us-middle .about-us-middle-points p {
-  margin-top: 13px;
 }
