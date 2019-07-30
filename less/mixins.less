@@ -11,7 +11,7 @@
     justify-content: center;
   }
   
-.bmix (@bc: #2A9FD8, @c: white){
+.bmix (@bc: #2A9FD8, @c: white, @b: none){
     background-color: @bc; 
     color: @c;
     padding: 7px 7px;
@@ -22,5 +22,10 @@
     border-radius: 4px;
     width: 100px;
     font-weight: bold;
-    border: 2px solid #2A9FD8;
+    border: @b;
+  }
+
+  .contact (@c: white, @fw: bold){
+    color: @c;
+    font-weight: @fw;
   }
