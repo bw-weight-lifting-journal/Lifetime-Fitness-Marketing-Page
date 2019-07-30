@@ -179,9 +179,9 @@ p {
   font-size: 4rem;
 }
 .top nav {
-  display: flex;
   justify-content: space-between;
   width: 100%;
+  display: flex;
   padding-right: 20%;
   padding-left: 20%;
   margin-top: 2%;
@@ -197,17 +197,25 @@ p {
 }
 @media (max-width: 500px) {
   .top nav {
+    padding: 0px;
+    margin: 0px;
     padding-top: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-    justify-content: space-around;
-    padding-bottom: 2%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
   }
 }
 .top nav .toolbar {
   text-decoration: none;
   font-size: 2rem;
   color: black;
+}
+@media (max-width: 500px) {
+  .top nav .toolbar {
+    width: 100%;
+    border-top: 1px solid black;
+    padding-top: 1%;
+  }
 }
 .top nav a {
   font-weight: bold;
@@ -238,6 +246,11 @@ footer {
 @media (max-width: 800px) {
   .home .intro .topimage .workout1 {
     margin-top: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .home .intro .topimage .workout1 {
+    margin-top: 15%;
   }
 }
 .home .image_class {
@@ -274,15 +287,13 @@ footer {
   background-color: #084E8A;
   color: white;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .home .middle-section .middle-points {
-    width: 29%;
-  }
-}
-@media (max-width: 1000px) {
-  .home .middle-section .middle-points {
+    display: flex;
     width: 100%;
-    padding: 15px, 15px, 0px, 15px;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media (max-width: 500px) {
@@ -300,8 +311,21 @@ footer {
   margin-top: 13px;
 }
 @media (max-width: 800px) {
-  .home .middle-section .middle-points img {
+  .home .middle-section .middle-points .image_class img {
     border-radius: 50%;
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .home .middle-section .middle-points .image_class img {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  .home .middle-section .middle-points .image_class {
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 }
 .home .middle-section .about-middle-points {
@@ -314,21 +338,18 @@ footer {
   flex-flow: row-wrap;
   padding-right: 10%;
 }
-@media (max-width: 1000px) {
-  .home .middle-section .about-middle-points {
-    width: 100%;
-    flex-direction: column;
-  }
-}
 @media (max-width: 800px) {
   .home .middle-section .about-middle-points {
-    width: 100%;
-    padding: 15px, 15px, 0px, 15px;
+    width: 48%;
+    flex-direction: column;
+    margin-bottom: 2% !important;
   }
 }
 @media (max-width: 500px) {
   .home .middle-section .about-middle-points {
     margin: 0px;
+    width: 100%;
+    flex-flow: row-wrap;
   }
 }
 .home .middle-section .about-middle-points h3 {
@@ -340,39 +361,38 @@ footer {
 .home .middle-section .about-middle-points p {
   margin-top: 13px;
 }
-.home .middle-section .about-middle-points img {
+@media (max-width: 800px) {
+  .home .middle-section .about-middle-points .image_class {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.home .middle-section .about-middle-points .image_class img {
   border-radius: 50%;
   width: 330px;
 }
-@media (max-width: 1000px) {
-  .home .middle-section .about-middle-points img {
-    width: 100%;
+@media (max-width: 800px) {
+  .home .middle-section .about-middle-points .image_class img {
+    width: 65%;
   }
 }
 .home .middle-section .about-middle-points .middle_point_text {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  font-weight: bold;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .home .middle-section .about-middle-points .middle_point_text {
     width: 100%;
-  }
-}
-.home .middle-section .about-middle-points #dan-text {
-  margin-left: 10%;
-}
-@media (max-width: 1000px) {
-  .home .middle-section .about-middle-points #dan-text {
-    margin: none;
-    padding: none;
   }
 }
 .home .middle-section #odds {
   margin-right: 20%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .home .middle-section #odds {
     margin: 0px;
   }
@@ -380,7 +400,7 @@ footer {
 .home .middle-section #evens {
   margin-left: 20%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .home .middle-section #evens {
     margin: 0px;
   }

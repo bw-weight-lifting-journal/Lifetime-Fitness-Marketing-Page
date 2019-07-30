@@ -18,6 +18,9 @@
         @media @tablet {
           margin-top: 10%;
         }
+        @media @phone {
+          margin-top: 15%;
+        }
       }
     }
   }
@@ -55,16 +58,18 @@
       width: 30%;
       background-color: @deep-blue;
       color: white;
-      @media @between{
-        width: 29%;
-      }
-      @media @between{
+      @media @tablet{
+        display: flex;
         width: 100%;
-        padding: 15px, 15px, 0px, 15px;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
       }
+
       @media @phone {
         margin: 0px;
       }
+
 
       h3 {
         margin-bottom: 11px;
@@ -77,11 +82,22 @@
         margin-top: 13px;
       }
 
-      img {
-        @media @tablet{
-          border-radius: 50%;
+      .image_class {
+        img {
+          @media @tablet{
+            border-radius: 50%;
+            width: 70%;
+          }
+          @media @phone {
+            width: 70%;
+          }
         }
-      }
+        @media @tablet {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+        }
+      } 
     }
 
     .about-middle-points {
@@ -93,16 +109,15 @@
       color: white;
       flex-flow: row-wrap;
       padding-right: 10%;
-      @media @between{
-        width: 100%;
-        flex-direction: column;
-      }
       @media @tablet{
-        width: 100%;
-        padding: 15px, 15px, 0px, 15px;
+        width: 48%;
+        flex-direction: column;
+        margin-bottom: 2% !important;
       }
       @media @phone {
         margin: 0px;
+        width: 100%;
+        flex-flow: row-wrap;
       }
 
       h3 {
@@ -116,51 +131,45 @@
         margin-top: 13px;
       }
 
-      img {
-        border-radius: 50%;
-        width: 330px;
-        @media @between {
+      .image_class {
+        @media @tablet {
           width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+        img {
+          border-radius: 50%;
+          width: 330px;
+          @media @tablet {
+            width: 65%;
+          }
         }
       }
 
-      // #dan-pic {
-      //   width: 150%;
-      //   @media @tablet {
-      //     width: 100%;
-      //   }
-      // }
+
 
       .middle_point_text{
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        @media @between {
+        font-weight: bold;
+        @media @tablet {
           width: 100%;
         }
-      }
-
-      #dan-text {
-        margin-left: 10%;
-        @media @between {
-          margin: none;
-          padding: none;
-        }
-      }
-
     }
+  }
 
     #odds {
       margin-right: 20%;
-      @media @between {
+      @media @tablet {
         margin: 0px;
       }
     }
 
     #evens {
       margin-left: 20%;
-      @media @between {
+      @media @tablet {
         margin: 0px;
       }
     }
