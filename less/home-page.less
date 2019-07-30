@@ -33,6 +33,14 @@
     }
   }
 
+  div.top-blurb {
+    display: flex;
+    width: 96%;
+    margin: 2%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .middle-section {
     display: flex;
     flex-flow: row-wrap;
@@ -134,8 +142,9 @@
       }
 
       #dan-text {
-        margin-left: 20%;
+        margin-left: 10%;
         @media @between {
+          margin: none;
           padding: none;
         }
       }
@@ -202,8 +211,12 @@
         padding-top: 2%;
       }
 
+      h3 {
+        margin-bottom: 10%;
+      }
+
       p {
-        margin-bottom: 26px;
+        margin-bottom: 5%;
       }
 
       .btn {
@@ -212,6 +225,9 @@
         }
         .button {
           .bmix(@deep-blue);
+          width: 100%;
+          padding: 30px;
+          font-size: 3rem;
           @media @tablet{
             display: none;
           }
