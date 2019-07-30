@@ -10,6 +10,11 @@
 
     p {
       padding:0 15px;
+      margin: .5%;
+    }
+
+    .quote{
+      font-style: italic;
     }
 
     .topimage{
@@ -58,6 +63,9 @@
       width: 30%;
       background-color: @deep-blue;
       color: white;
+      p.quote {
+        font-style: italic;
+      }
       @media @tablet{
         display: flex;
         width: 100%;
@@ -154,6 +162,7 @@
         flex-direction: column;
         justify-content: space-around;
         font-weight: bold;
+        font-style: italic;
         .contact-info {
           .contact();
         }

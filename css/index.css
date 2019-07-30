@@ -239,6 +239,10 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+  margin: 0.5%;
+}
+.home .intro .quote {
+  font-style: italic;
 }
 .home .intro .topimage .workout1 {
   width: 100%;
@@ -286,6 +290,9 @@ footer {
   width: 30%;
   background-color: #084E8A;
   color: white;
+}
+.home .middle-section .middle-points p.quote {
+  font-style: italic;
 }
 @media (max-width: 800px) {
   .home .middle-section .middle-points {
@@ -383,6 +390,7 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   font-weight: bold;
+  font-style: italic;
 }
 .home .middle-section .about-middle-points .middle_point_text .contact-info {
   color: white;
