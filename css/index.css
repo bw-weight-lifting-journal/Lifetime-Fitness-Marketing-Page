@@ -230,6 +230,7 @@ footer {
   text-align: left;
   width: 100%;
   margin-top: 0%;
+  text-decoration: none;
 }
 .home .intro h2 {
   padding: 15px;
@@ -530,12 +531,11 @@ footer {
     font-weight: bold;
     border: none;
     display: flex;
-    width: 100%;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     padding: 5%;
-    padding-left: 33%;
+    padding-left: 10%;
     font-size: 3rem;
   }
 }
